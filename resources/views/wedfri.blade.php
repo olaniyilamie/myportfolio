@@ -60,12 +60,12 @@
 				<div id="zah" class="col-12">
 					<div class="row fixed-top" style="background-color: rgba(102,59,0,0.8)" id="homee"> 
 						<div class="col-12">
-							<nav class="navbar navbar-expand-md narbar-light" style="color: #aeb4a9">
+							<nav class="navbar navbar-expand-md navbar-dark" style="color: #aeb4a9">
 								<div class="col-md-3">
 									<div class="row mb-0">
 										<div class="col-10">
-											<h1 class="navbar-brand d-inline font-weight-bold pl-md-2" id="titleh" > <img src="<?php echo asset('myimage/logo.jpg');?>" 
-											> O. OLANIYI <p class="mb-0 pb-0"style="font-size:0.7em"> FULL STACK DEVELOPER</p></h1>
+											<h1 class="navbar-brand d-inline font-weight-bold pl-md-2" style="color: #AEB4A9;"> <img src="<?php echo asset('myimage/logo.jpg');?>" 
+											> O. OLANIYI <p class="mb-0 pb-0 textcol"style="font-size:0.7em"> FULL STACK DEVELOPER</p></h1>
 										</div>
 										<div class="col-2 ">
 											<button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
