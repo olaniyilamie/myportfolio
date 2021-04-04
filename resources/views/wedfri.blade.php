@@ -68,9 +68,9 @@
 											> O. OLANIYI <p class="mb-0 pb-0 textcol"style="font-size:0.7em"> FULL STACK DEVELOPER</p></h1>
 										</div>
 										<div class="col-2 ">
-											<button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
+											<button class="navbar-toggler text-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
 											aria-expanded="false" aria-label="Toggle navigation" id="toggbut">
-											<span class="navbar-toggler-icon" ><img src="<?php echo asset('myimage/toggle.png');?>" class="img-fluid"></span>
+											<span class="navbar-toggler-icon" ></span>
 											</button>
 										</div>
 									</div>
