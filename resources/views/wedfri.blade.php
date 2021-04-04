@@ -26,7 +26,10 @@
 					font-weight:700; font-size: 14px;margin-bottom: 0px;
 				}
 				.lass{
-					font-size: 25px;padding: 0px 5px;
+					font-size: 2em;padding: 0px 5px;
+				}
+				.lasspad{
+					padding: 0px 0.05em;
 				}
 				.skill-item {
 					/* padding: 20px 0; */
@@ -34,9 +37,6 @@
 					color:#7a4700;
 				}
 				.textcol{
-					color: #aeb4a9;
-				}
-				.textco{
 					color: #aeb4a9;
 				}
 				.dropbgcolor{
@@ -60,7 +60,7 @@
 				<div id="zah" class="col-12">
 					<div class="row fixed-top" style="background-color: rgba(102,59,0,0.8)" id="homee"> 
 						<div class="col-12">
-							<nav class="navbar navbar-expand-md navbar-dark" style="color: #aeb4a9">
+							<nav class="navbar navbar-expand-md" style="color: #aeb4a9">
 								<div class="col-md-3">
 									<div class="row mb-0">
 										<div class="col-10">
@@ -70,7 +70,7 @@
 										<div class="col-2 ">
 											<button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
 											aria-expanded="false" aria-label="Toggle navigation" id="toggbut">
-											<span class="navbar-toggler-icon" ></span>
+											<span class="navbar-toggler-icon" ><img src="<?php echo asset('myimage/toggle.png');?>" class="img-fluid"></span>
 											</button>
 										</div>
 									</div>
@@ -78,13 +78,13 @@
 								<div class="col-md-2 pl-0 ml-0">
 									<div class="row">
 										<div class="col-12 text-right">
-											<a href="<?php echo url('https://www.facebook.com/horlarneyi.horlarmedey/');?>" target="_blank">
-											<i class="fab fa-facebook-square lass textcol hc"></i></a>
-											<a href="<?php echo url('https://www.instagram.com/_olamie/');?>" target="_blank">
+											<a href="<?php echo url('https://www.facebook.com/horlarneyi.horlarmedey/');?>" target="_blank" class="hc">
+											<i class="fab fa-facebook-square lass textcol hc "></i></a>
+											<a href="<?php echo url('https://www.instagram.com/_olamie/');?>" target="_blank" class="hc">
 											<i class="fab fa-instagram-square lass textcol hc"></i></a>
-											<a href="<?php echo url('https://twitter.com/_olamie');?>" target="_blank">
+											<a href="<?php echo url('https://twitter.com/_olamie');?>" target="_blank" class="hc">
 											<i class="fab fa-twitter-square lass textcol hc"></i></a>
-											<a href="<?php echo url('http://linkedin.com/in/olamide-olaniyi-22385918b');?>" target="_blank">
+											<a href="<?php echo url('https://linkedin.com/in/olaniyilamie');?>" target="_blank" class="hc">
 											<i class="fab fa-linkedin lass textcol hc"></i></a>
 										</div>
 									</div>
@@ -96,35 +96,35 @@
 										<div class="collapse navbar-collapse col-12 text-left-collapse pb-0" id="navbarNavDrop">
 										<ul class="navbar-nav"  >
 											<li class="nav-item active">
-												<a class="nav-link textcol  font-weight-bold hc" href="#homee">HOME <span class="sr-only">(current)</span></a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#homee">HOME <span class="sr-only">(current)</span></a>
 											</li>
 											<li class="nav-item active">
-												<a class="nav-link textcol font-weight-bold hc" href="#portfolio">ABOUT<span class="sr-only">(current)</span></a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#portfolio">ABOUT<span class="sr-only">(current)</span></a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link textcol font-weight-bold hc" href="#skills">PROJECT</a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#skills">PROJECT</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link textcol font-weight-bold hc" href="#about">SKILLS</a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#about">SKILLS</a>
 											</li>
 											<li class="nav-item dropdown">
-												<a class="nav-link dropdown-toggle textco font-weight-bold hc" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<a class="nav-link dropdown-toggle textcol font-weight-bold hc" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												SELF-SERVICE
 												</a>
 												<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
-												<a class="dropdown-item textcol font-weight-bold hc btn" data-toggle="modal" data-target="#exampleModal"> REQUEST QUOTE </a>
-												<a class="dropdown-item textcol font-weight-bold hc btn" data-toggle="modal" data-target="#hire">HIRE ME</a>
+												<a class="dropdown-item textcol tog font-weight-bold hc btn" data-toggle="modal" data-target="#exampleModal"> REQUEST QUOTE </a>
+												<a class="dropdown-item textcol tog font-weight-bold hc btn" data-toggle="modal" data-target="#hire">HIRE ME</a>
 												</div>
 											</li>
 											<li class="nav-item dropdown">
-												<a class="nav-link dropdown-toggle textco hc font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<a class="nav-link dropdown-toggle textcol hc font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												REACH ME
 												</a>
 											
 												<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-												<a class="dropdown-item textcol font-weight-bold hc" href="tel:0703-620-4411" > CALL </a>
-												<a class="dropdown-item textcol font-weight-bold hc" href="mailto:kaozy3690@gmail.com" target="_blank"> EMAIL </a>
-												<a class="dropdown-item textcol font-weight-bold hc" href="#contactform"> SEND A MESSAGE </a>
+												<a class="dropdown-item textcol tog font-weight-bold hc" href="tel:0703-620-4411" > CALL </a>
+												<a class="dropdown-item textcol tog font-weight-bold hc" href="mailto:kaozy3690@gmail.com" target="_blank"> EMAIL </a>
+												<a class="dropdown-item textcol tog font-weight-bold hc" href="#contactform"> SEND A MESSAGE </a>
 												</div>
 											</li>
 										</ul>
@@ -156,7 +156,7 @@
 										<div class="modal-content" style="background-color:black; color:white;font-size:12px;" ><!-- rgb(179,99,11) -->
 										    <div class="modal-header">
 										        <div class="row">
-													<div class="col-12">
+													<div class="col-12 text-center">
 													<p class="modal-title pl-5" id="exampleModalLabel">I will get back to you shortly, please fill the form.</p>
 													</div>
 												</div>
@@ -316,7 +316,7 @@
 									<div class="modal-content" style="background-color:black; color:white; font-size:12px;" >
 									    <div class="modal-header">
 										  	<div class="row">
-												<div class="col-12">
+												<div class="col-12 text-center">
 													<p class="modal-title pl-3" id="exampleModalLabel1">Please fill and I will reach out to you immediately received, Thanks.</p>
 												</div>
 											</div>
@@ -573,19 +573,26 @@
 						alert("Your message has been received successfully")
 					})
 					// <when i was using an image as my toggle icon>
-					// $('.textcol').click(function(){
-					// 	if(screen.width <=576){
-					// 	$('#toggbut').click();}
-					// })
+					$('.tog').click(function(){
+						if(screen.width <=576){
+						$('#toggbut').click();}
+					})
 
-					// $('#myreach').click(function(){
-					// 	$('#navbarDropdownMenu').click();
-					// 	return false;
-					// })
+					// on click of the reach me button, it clicks the dropdown nav with reach me option
+					$('#myreach').click(function(){
+						if(screen.width <=576){
+							$('#toggbut').click();
+							$('#navbarDropdownMenu').click();
+							return false;
+						}
+						$('#navbarDropdownMenu').click();
+						return false;
+					})
 
-					// if((screen.width >=768) && (screen.width  < 1000)){
-					// 	$('.hc').addClass('fontsizescreen');
-					// }
+					if((screen.width >=768) && (screen.width  < 1000)){
+						$('.hc').addClass('fontsizescreen');
+						$('.lass').addClass('lasspad');
+					}
 				})
 			</script>
 		</body>
