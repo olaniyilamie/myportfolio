@@ -123,7 +123,7 @@
 											
 												<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
 												<a class="dropdown-item textcol tog font-weight-bold hc" href="tel:0703-620-4411" > CALL </a>
-												<a class="dropdown-item textcol tog font-weight-bold hc" href="mailto:kaozy3690@gmail.com" target="_blank"> EMAIL </a>
+												<a class="dropdown-item textcol tog font-weight-bold hc" href="mailto:olaniyilamie@gmail.com" target="_blank"> EMAIL </a>
 												<a class="dropdown-item textcol tog font-weight-bold hc" href="#contactform"> SEND A MESSAGE </a>
 												</div>
 											</li>
