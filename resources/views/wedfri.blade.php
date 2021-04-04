@@ -60,7 +60,7 @@
 				<div id="zah" class="col-12">
 					<div class="row fixed-top" style="background-color: rgba(102,59,0,0.8)" id="homee"> 
 						<div class="col-12">
-							<nav class="navbar navbar-expand-md" style="color: #aeb4a9">
+							<nav class="navbar navbar-expand-md narbar-light" style="color: #aeb4a9">
 								<div class="col-md-3">
 									<div class="row mb-0">
 										<div class="col-10">
@@ -70,7 +70,7 @@
 										<div class="col-2 ">
 											<button class="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
 											aria-expanded="false" aria-label="Toggle navigation" id="toggbut">
-											<span class="navbar-toggler-icon" ><img src="<?php echo asset('myimage/toggle.png');?>" class="img-fluid"></span>
+											<span class="navbar-toggler-icon" ></span>
 											</button>
 										</div>
 									</div>
@@ -572,20 +572,20 @@
 					$('.sendbtn').click(function(){
 						alert("Your message has been received successfully")
 					})
+					// <when i was using an image as my toggle icon>
+					// $('.textcol').click(function(){
+					// 	if(screen.width <=576){
+					// 	$('#toggbut').click();}
+					// })
 
-					$('.textcol').click(function(){
-						if(screen.width <=576){
-						$('#toggbut').click();}
-					})
+					// $('#myreach').click(function(){
+					// 	$('#navbarDropdownMenu').click();
+					// 	return false;
+					// })
 
-					$('#myreach').click(function(){
-						$('#navbarDropdownMenu').click();
-						return false;
-					})
-
-					if((screen.width >=768) && (screen.width  < 1000)){
-						$('.hc').addClass('fontsizescreen');
-					}
+					// if((screen.width >=768) && (screen.width  < 1000)){
+					// 	$('.hc').addClass('fontsizescreen');
+					// }
 				})
 			</script>
 		</body>
