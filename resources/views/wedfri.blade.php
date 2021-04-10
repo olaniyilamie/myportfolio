@@ -58,12 +58,12 @@
 		<div class="container-fluid">
 			<div id="shina" class="row">
 				<div id="zah" class="col-12">
-					<div class="row fixed-top" style="background-color: rgba(102,59,0,0.8)" id="homee"> 
+					<div class="row fixed-top" style="background-color: rgba(102,59,0,0.8)"> 
 						<div class="col-12">
 							<nav class="navbar navbar-expand-md" style="color: #aeb4a9">
 								<div class="col-md-3">
-									<div class="row mb-0">
-										<div class="col-10">
+									<div class="row mb-0" id="home">
+										<div class="col-10" >
 											<h1 class="navbar-brand d-inline font-weight-bold pl-md-2" style="color: #AEB4A9;"> <img src="<?php echo asset('myimage/logo.jpg');?>" 
 											> O. OLANIYI <p class="mb-0 pb-0 textcol"style="font-size:0.7em"> FULL STACK DEVELOPER</p></h1>
 										</div>
@@ -96,16 +96,16 @@
 										<div class="collapse navbar-collapse col-12 text-left-collapse pb-0" id="navbarNavDrop">
 										<ul class="navbar-nav"  >
 											<li class="nav-item active">
-												<a class="nav-link textcol tog font-weight-bold hc" href="#homee">HOME <span class="sr-only">(current)</span></a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#home">HOME <span class="sr-only">(current)</span></a>
 											</li>
 											<li class="nav-item active">
-												<a class="nav-link textcol tog font-weight-bold hc" href="#portfolio">ABOUT<span class="sr-only">(current)</span></a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#about">ABOUT</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link textcol tog font-weight-bold hc" href="#skills">PROJECT</a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#port">PROJECT</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link textcol tog font-weight-bold hc" href="#about">SKILLS</a>
+												<a class="nav-link textcol tog font-weight-bold hc" href="#skill">SKILLS</a>
 											</li>
 											<li class="nav-item dropdown">
 												<a class="nav-link dropdown-toggle textcol font-weight-bold hc" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -386,8 +386,8 @@
 				<div class="row" style="background-color: #AEB4A9">
 					<div class="col">
 						<div class="row">
-							<div class="col-md-2 p-0 ">
-								<h2 class="text-left-md text-center px-md-2" id="about" style="background-color: #061826;color: #AEB4A9"> ABOUT</h2>
+							<div class="col-md-2 p-0" id="about">
+								<h2 class="text-left-md text-center px-md-2" style="background-color: #061826;color: #AEB4A9"> ABOUT</h2>
 							</div>
 						</div>
 						<div class="row">
@@ -398,8 +398,8 @@
 								<p class="text-justify">Passionate PHP full-stack developer. Professionally skilled in front-end technologies (HTML, 
 								CSS, JavaSript, Jquery), PHP, Laravel framework, Ajax, and MySQL database.<br> Maintains a healthy balance between functionality and visual impact in projects which is the reason behind 
 								coding from scratch and gradually transforms ideas into digital, paying maximal attention to the vision of your organization or product.</p>
-									<div class="row" id="skills">
-										<div class="col-12 text-center mb-2" style="background-color: #061826">
+									<div class="row">
+										<div class="col-12 text-center mb-2" style="background-color: #061826" id="skill">
 											<h3 class=" m-4 pb-0 px-md-2"  style="color: #AEB4A9;display: inline;">CODING SKILLS</h3>
 										</div>
 										<div class="col-sm-3 col-6">
@@ -467,8 +467,8 @@
 				<div class="row pb-5" style="background-color: #663b00;">
 					<div class="col">
 						<div class="row">
-							<div class="col-md-3 offset-md-9 pr-0 mb-2 ">
-								<h2 class="text-right-md text-center px-md-2" style="background-color: #061826;color: #AEB4A9" id="portfolio"> PROJECT</h2>
+							<div class="col-md-3 offset-md-9 pr-0 mb-2" id="port">
+								<h2 class="text-right-md text-center px-md-2" style="background-color: #061826;color: #AEB4A9"> PROJECT</h2>
 							</div>
 						</div>
 
