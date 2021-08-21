@@ -55,6 +55,10 @@ class Myweb extends Controller
         return view('reachout1',['getback'=>$getback,'getback1'=>$getback1,'getback2'=>$getback2])
         ;
     }
+
+    function contactToMail(){
+        
+    }
     
 
     

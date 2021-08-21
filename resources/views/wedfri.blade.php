@@ -66,6 +66,7 @@
 										<div class="col-10" >
 											<h1 class="navbar-brand d-inline font-weight-bold pl-md-2" style="color: #AEB4A9;"> <img src="<?php echo asset('myimage/logo.jpg');?>" 
 											> O. OLANIYI <p class="mb-0 pb-0 textcol"style="font-size:0.7em"> FULL STACK DEVELOPER</p></h1>
+											<a href="<?php echo url('https://internship.zuri.team/')?>" target="_blank"><img src="<?php echo asset('zuri.png');?>"  alt="Zuri logo" class="img-fluid btn btn-sm btn-outline-dark"></a>
 										</div>
 										<div class="col-2 ">
 											<button class="navbar-toggler text-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
@@ -78,6 +79,7 @@
 								<div class="col-md-2 pl-0 ml-0">
 									<div class="row">
 										<div class="col-12 text-right">
+										
 											<a href="<?php echo url('https://www.facebook.com/horlarneyi.horlarmedey/');?>" target="_blank" class="hc">
 											<i class="fab fa-facebook-square lass textcol hc "></i></a>
 											<a href="<?php echo url('https://www.instagram.com/_olamie/');?>" target="_blank" class="hc">
@@ -114,6 +116,7 @@
 												<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
 												<a class="dropdown-item textcol tog font-weight-bold hc btn" data-toggle="modal" data-target="#exampleModal"> REQUEST QUOTE </a>
 												<a class="dropdown-item textcol tog font-weight-bold hc btn" data-toggle="modal" data-target="#hire">HIRE ME</a>
+												<a class="dropdown-item textcol tog font-weight-bold hc btn" download="olamidecv" href="<?php echo asset('my_cv.pdf');?>">DOWNLOAD CV <i class="fas fa-download"></i></a>
 												</div>
 											</li>
 											<li class="nav-item dropdown">
