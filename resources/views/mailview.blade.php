@@ -1,6 +1,6 @@
 @if ($contactform['subject'])
 <h3>Babe, this message is from you portfolio</h3>
-<p><b>Name:</b>{{$contactform['name']}}</p>
+<p><b>Name:</b> {{$contactform['name']}}</p>
 <p><b>Email:</b> {{$contactform['email']}}</p>
 <p><b>Phone-number:</b> {{$contactform['number']}}</p>
 <p><b>Subject:</b> {{$contactform['subject']}}</p>
