@@ -3,16 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\PortfolioMessage;
 use App\Hire;
 use App\Webservice;
 use App\Message;
 
 class Myweb extends Controller
 {
-    //
+    
     function loadpage(Request $req){
     	return view('wedfri');
     }
+
+
     function hire(Request $req){
         $hire=new Hire;
         $hire->companyname= $req->name;
@@ -21,7 +25,8 @@ class Myweb extends Controller
         $hire->address=$req->address;
         $hire->Details=$req->detail;
         $hire->save();
-        return view ('wedfri');
+        Mail::to('olaniyilamie@gmail.com')->send(new PortfolioMessage($hire));
+        return back()->with('flash','Message received, we will getback to you shortly. Thanks !!!');
         
 
     }
@@ -33,7 +38,8 @@ class Myweb extends Controller
         $web->typeservice=$req->website;
         $web->budget=$req->budget;
         $web->save();
-        return view('wedfri');
+        Mail::to('olaniyilamie@gmail.com')->send(new PortfolioMessage($web));
+        return back()->with('flash','Message received, we will getback to you shortly. Thanks !!!');
 
     }
     function message(Request $req){
@@ -45,7 +51,11 @@ class Myweb extends Controller
         $msg->subject=$req->subject;
         $msg->detail=$req->detail;
         $msg->save();
-        return view('wedfri');
+        Mail::to('olaniyilamie@gmail.com')->send(new PortfolioMessage($msg));
+        return back()->with('flash','Message received, we will getback to you shortly. Thanks !!!');
+        // \Illuminate\Support\Facades\Mail::to('olaniyilamie@gmail.com')->send(new \App\Mail\PortfolioMessage($data));
+        // return view('wedfri')->with('flash','Thank you for contacting me, I will reach back to you shortly');
+       
     }
 
     function personal(){
@@ -56,9 +66,7 @@ class Myweb extends Controller
         ;
     }
 
-    function contactToMail(){
-        
-    }
+    
     
 
     

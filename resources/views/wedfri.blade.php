@@ -141,6 +141,11 @@
 
 				<div class="row mb-5">
 					<div class="col-12">
+						@if($message=Session('flash'))
+							<div class="row">
+								<div class="col-md-6 offset-md-3 alert alert-light text-center mb-5"><p class="my-0 py-0">{{$message}}</p></div>
+							</div>
+						@endif
 						<h2 class="text-center textcol">LOOKING FOR A WEB EXPERT ?</h2>
 							<div class="col col-md-6  offset-md-3">
 								<h4  class="text-center" style="color: #FF9001; font-family:'Microsoft Himalaya'; font-size: 50px";> OLAMIDE IS HERE WITH FAST SERVICE ! </h4>
@@ -503,6 +508,7 @@
 					<div class="row ">
 						<div class="col-md-4 card mb-4 mb-md-0" id="contactform" >
 						<form action="<?php echo route('message')?>" method="POST" >
+						<!-- <form action="/" method="POST" > -->
 							@csrf
 							<div class="row ">
 								<div class="col-12">
@@ -530,7 +536,7 @@
 									<label for="number" class="mb-0" style="font-size: 0.7em;">Phone-Number <span class="text-danger">*</span></label>
 								</div>
 								<div class="col-12">
-									<input type="text" name="number"  id="number" class="form-control form-control-sm" required>
+									<input type="number" name="number"  id="number" class="form-control form-control-sm" required>
 								</div>
 							</div>
 							<div class="row mb-2">
@@ -572,9 +578,9 @@
 
 			<script type="text/javascript">
 				$(document).ready(function(){
-					$('.sendbtn').click(function(){
-						alert("Your message has been received successfully")
-					})
+					// $('.sendbtn').click(function(){
+					// 	alert("Your message has been received successfully")
+					// })
 					// <when i was using an image as my toggle icon>
 					$('.tog').click(function(){
 						if(screen.width <=576){
