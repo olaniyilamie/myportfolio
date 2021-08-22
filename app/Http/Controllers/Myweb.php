@@ -26,7 +26,7 @@ class Myweb extends Controller
         $hire->Details=$req->detail;
         $hire->save();
         Mail::to('olaniyilamie@gmail.com')->send(new PortfolioMessage($hire));
-        return back()->with('flash','Message received, we will getback to you shortly. Thanks !!!');
+        return back()->with('flash','Message received. Thanks, we will getback to you shortly.');
         
 
     }
@@ -39,7 +39,7 @@ class Myweb extends Controller
         $web->budget=$req->budget;
         $web->save();
         Mail::to('olaniyilamie@gmail.com')->send(new PortfolioMessage($web));
-        return back()->with('flash','Message received, we will getback to you shortly. Thanks !!!');
+        return back()->with('flash','Message received. Thanks, we will getback to you shortly.');
 
     }
     function message(Request $req){
@@ -52,7 +52,7 @@ class Myweb extends Controller
         $msg->detail=$req->detail;
         $msg->save();
         Mail::to('olaniyilamie@gmail.com')->send(new PortfolioMessage($msg));
-        return back()->with('flash','Message received, we will getback to you shortly. Thanks !!!');
+        return back()->with('flash','Message received. Thanks, we will getback to you shortly.');
         // \Illuminate\Support\Facades\Mail::to('olaniyilamie@gmail.com')->send(new \App\Mail\PortfolioMessage($data));
         // return view('wedfri')->with('flash','Thank you for contacting me, I will reach back to you shortly');
        
