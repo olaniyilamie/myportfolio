@@ -88,7 +88,7 @@
 											<i class="fab fa-instagram-square lass textcol hc"></i></a>
 											<a href="<?php echo url('https://twitter.com/_olamie');?>" target="_blank" class="hc">
 											<i class="fab fa-twitter-square lass textcol hc"></i></a>
-										<div>
+										</div>
 									</div>
 								</div>
 								<div class="col-md-7 ">
