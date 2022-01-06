@@ -8,6 +8,7 @@ use App\Mail\PortfolioMessage;
 use App\Hire;
 use App\Webservice;
 use App\Message;
+use Illuminate\Support\Facades\Storage;
 
 class Myweb extends Controller
 {
@@ -17,12 +18,13 @@ class Myweb extends Controller
     }
     
     function downloadCv(){
-        $file= public_path()."\storage\Olaniyi_Olamide_CV.pdf";
+        //$file= public_path()."\storage\Olaniyi_Olamide_CV.pdf";
         $headers = array(
             'Content-Type : application/pdf',
         );
         $newFileName= 'Olaniyi Olamide CV.pdf';
-        return response()->download($file, $newFileName, $headers);
+        //return response()->download($file, $newFileName, $headers);
+        return Storage::download('Olaniyi_Olamide_CV.pdf', $newFileName, $headers);
     }
 
 
