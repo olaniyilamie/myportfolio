@@ -15,6 +15,15 @@ class Myweb extends Controller
     function loadpage(Request $req){
     	return view('wedfri');
     }
+    
+    function downloadCv(){
+        $file= public_path()."/storage/Olaniyi_Olamide_CV.pdf";
+        $headers = array(
+            'Content-Type : application/pdf',
+        );
+        $newFileName= 'Olaniyi Olamide CV.pdf';
+        return response()->download($file, $newFileName, $headers);
+    }
 
 
     function hire(Request $req){

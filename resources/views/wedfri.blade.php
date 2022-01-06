@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php use Illuminate\Support\Facades\Storage; ?>
 	<html>
 		<head>
 			<title>O. OLANIYI</title>
@@ -60,13 +61,12 @@
 				<div id="zah" class="col-12">
 					<div class="row fixed-top" style="background-color: rgba(102,59,0,0.8)"> 
 						<div class="col-12">
-							<nav class="navbar navbar-expand-md" style="color: #aeb4a9">
+							<nav class="navbar navbar-expand-md navbar-inverse" style="color: #aeb4a9">
 								<div class="col-md-3">
-									<div class="row mb-0" id="home">
-										<div class="col-10" >
+									<div class="row mb-0">
+										<div class="col-10 navbar-header" >
 											<h1 class="navbar-brand d-inline font-weight-bold pl-md-2" style="color: #AEB4A9;"> <img src="<?php echo asset('myimage/logo.jpg');?>" 
 											> O. OLANIYI <p class="mb-0 pb-0 textcol"style="font-size:0.7em"> FULL STACK DEVELOPER</p></h1>
-											<a href="<?php echo url('https://internship.zuri.team/')?>" target="_blank"><img src="<?php echo asset('zuri.png');?>"  alt="Zuri logo" class="img-fluid btn btn-sm btn-outline-dark"></a>
 										</div>
 										<div class="col-2 ">
 											<button class="navbar-toggler text-right navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDrop" aria-controls="navbarNavDropdown" 
@@ -96,7 +96,7 @@
 									
 									
 										<div class="collapse navbar-collapse col-12 text-left-collapse pb-0" id="navbarNavDrop">
-										<ul class="navbar-nav"  >
+										<ul class="nav navbar-nav"  >
 											<li class="nav-item active">
 												<a class="nav-link textcol tog font-weight-bold hc" href="#home">HOME <span class="sr-only">(current)</span></a>
 											</li>
@@ -116,7 +116,9 @@
 												<div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
 												<a class="dropdown-item textcol tog font-weight-bold hc btn" data-toggle="modal" data-target="#exampleModal"> REQUEST QUOTE </a>
 												<a class="dropdown-item textcol tog font-weight-bold hc btn" data-toggle="modal" data-target="#hire">HIRE ME</a>
-												<a class="dropdown-item textcol tog font-weight-bold hc btn" download="olamidecv" href="<?php echo asset('my_cv.pdf');?>">DOWNLOAD CV <i class="fas fa-download"></i></a>
+												<a class="dropdown-item textcol tog font-weight-bold hc btn" href="{{route('olamidecv')}}">DOWNLOAD CV </a>
+
+												
 												</div>
 											</li>
 											<li class="nav-item dropdown">
@@ -137,7 +139,7 @@
 							</nav>  
 						</div>
 					</div>
-							<br><br><br><br><br><br><br><br><br><br>
+							<br id="home"><br><br><br><br><br><br><br><br><br>
 
 				<div class="row mb-5">
 					<div class="col-12">
@@ -390,11 +392,11 @@
 					</div>
 				</div>
 			</div>
-					<br>	
+					<br id="about">	
 				<div class="row" style="background-color: #AEB4A9">
 					<div class="col">
 						<div class="row">
-							<div class="col-md-2 p-0" id="about">
+							<div class="col-md-2 p-0">
 								<h2 class="text-left-md text-center px-md-2" style="background-color: #061826;color: #AEB4A9"> ABOUT</h2>
 							</div>
 						</div>
@@ -471,11 +473,11 @@
 						</div>
 					</div>		
 				</div>	
-						<br>
+						<br id="port">
 				<div class="row pb-5" style="background-color: #663b00;">
 					<div class="col">
 						<div class="row">
-							<div class="col-md-3 offset-md-9 pr-0 mb-2" id="port">
+							<div class="col-md-3 offset-md-9 pr-0 mb-2">
 								<h2 class="text-right-md text-center px-md-2" style="background-color: #061826;color: #AEB4A9"> PROJECT</h2>
 							</div>
 						</div>
@@ -563,9 +565,10 @@
 				    	</form>
 					</div>
 						<div class="col-md-8">
-							<iframe src="<?php echo url('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6166354088186!2d3.5360435140293327!3d6.
-							443246195338477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf75faead0af7%3A0xff4cf8519bdb4b87!2sTalkGlam!5e0!3m2!1sen!2sng!4v1610062865114!5m2!1sen!2sng');?>" width="100%"
-							 height="100%" frameborder="0" style="border:0;" class="map-responsive" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
+							<iframe src="<?php echo url('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.236815305707!2d3.338097949639893!3d6.
+							4916700253122315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c1d32fa9dcf%3A0xb779e06db8994907!2sBrown%20Rd%2C%20Surul
+							ere%20101241%2C%20Lagos!5e0!3m2!1sen!2sng!4v1639757215492!5m2!1sen!2sng');?>" 
+							width="100%" height="100%" frameborder="0" style="border:0;" class="map-responsive" allowfullscreen="" aria-hidden="false" tabindex="0" id="map" loading="lazy"></iframe>
 						</div>
 					</div>
 					<br>
@@ -589,7 +592,7 @@
 
 					// on click of the reach me button, it clicks the dropdown nav with reach me option
 					$('#myreach').click(function(){
-						if(screen.width <=576){
+						if(screen.width <=768){
 							$('#toggbut').click();
 							$('#navbarDropdownMenu').click();
 							return false;

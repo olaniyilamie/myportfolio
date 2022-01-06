@@ -26,6 +26,7 @@ Route::get('/', 'Myweb@loadpage')->name('myweb');
 Route::post('/needwebsubmit','Myweb@needweb')->name('needweb');
 Route::post('/hiresubmit','Myweb@hire')->name('hire');
 Route::post('/messagesubmit','Myweb@message')->name('message');
+Route::get('/mycv','Myweb@downloadCv')->name('olamidecv');
 
 Route::get('/unknown','Myweb@personal')->middleware('auth');
 Auth::routes();
