@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php use Illuminate\Support\Facades\Storage; ?>
 	<html>
 		<head>
 			<title>O. OLANIYI</title>

@@ -17,7 +17,7 @@ class Myweb extends Controller
     }
     
     function downloadCv(){
-        $file= public_path()."/storage/Olaniyi_Olamide_CV.pdf";
+        $file= public_path()."\storage\Olaniyi_Olamide_CV.pdf";
         $headers = array(
             'Content-Type : application/pdf',
         );
